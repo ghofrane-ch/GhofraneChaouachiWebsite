@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghofrane Chaouachi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navigation bar-->
+    <header>
+        <div class="header-container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Ghofrane CHAOUACHI</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+
+                            <li class="nav-item"><a class="nav-link" href="#aboutMe" data-translate="aboutMe">About
+                                    Me</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#skills" data-translate="skills">Skills</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#certifications"
+                                    data-translate="certifications">Certifications</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#experience"
+                                    data-translate="experience">Experience</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#education"
+                                    data-translate="education">Education</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#projects"
+                                    data-translate="projects">Projects</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#hobbies"
+                                    data-translate="hobbies">Hobbies</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Language selection-->
+            <div id="language-selection" class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Language
+                </button>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#" onclick="setLanguage('fr')"><img src="media/fr-flag.png"
+                                alt="French Language Selection" class="flag-icon">FR</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="setLanguage('en')"><img src="media/uk-flag.png"
+                                alt="English Language Selection" class="flag-icon">ENG</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Home Section -->
+        <section id="home" class="position-relative vh-100 d-flex align-items-center justify-content-center">
+            <header id="hero" class="container text-center text-md-start position-relative z-index-1">
+                <div class="row">
+                    <div id="intro-text" class="col-md-6 align-self-center">
+                        <h2 class="slide-in fw-bold mb-4" data-translate="welcomeMessage">
+                            Hello there, I am Ghofrane CHAOUACHI
+                        </h2>
+                        <p class="lead mb-4" data-translate="titre">
+                            A Bilingual Computer Programming Student at Collège la Cité (Ottawa Campus)
+                        </p>
+                        <div
+                            class="button-group d-flex flex-row flex-md-row gap-3 justify-content-center justify-content-md-start">
+                            <a href="mailto:chaouachi.ghofran@gmail.com" class="btn btn-primary"
+                                data-translate="contact">Hire Me</a>
+                            <a href="https://www.linkedin.com/in/ghofrane-chaouachi/" class="btn btn-primary"
+                                target="_blank">LinkedIn →</a>
+                            <a href="https://github.com/ghofrane-ch" class="btn btn-primary" target="_blank">GitHub
+                                →</a>
+                        </div>
+                    </div>
+                    <div id="intro-image" class="col-md-6 justify-content-center justify-content-md-end slide-in">
+                        <img src="media/my-image.jpg" alt="Ghofrane CHAOUACHI's Photo" class="img-fluid rounded-circle"
+                            loading="lazy">
+                    </div>
+                </div>
+            </header>
+            <video autoplay muted loop id="background-video"
+                class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover">
+                <source src="media/background-video.mp4" type="video/mp4">
+                <img src="media/fallback-image.jpg" alt="Background image" class="w-100 h-100 object-fit-cover">
+            </video>
+        </section>
+
+
+
+        <!-- About Me Section-->
+        <section id="aboutMe" class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <video class="w-100" controls>
+                            <source src="intro-video.mp4" type="video/mp4">
+                            <source src="intro-video.webm" type="video/webm">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="col-md-6" id="about-text">
+                        <h1 class="text-center text-md-left mb-4" data-translate="aboutMe">About Me</h1>
+                        <p data-translate="descriptionAboutMe1">With a strong foundation in banking and finance, I
+                            combine
+                            analytical prowess with advanced programming skills to tackle complex challenges.</p>
+                        <p data-translate="descriptionAboutMe2">Over nine years of experience in credit analysis,
+                            financial management, and project coordination have sharpened my ability to drive
+                            operational efficiency and deliver results.</p>
+                        <p data-translate="descriptionAboutMe3">Bilingual in English and French, I excel in building
+                            meaningful relationships with diverse teams and clients.</p>
+                        <p data-translate="descriptionAboutMe4">My passion for continuous learning fuels my commitment
+                            to leveraging technology and financial expertise to make impactful contributions.</p>
+                        <div class="text-center">
+                            <a href="resume-ghofrane-chaouachi.pdf" download="Ghofrane_Chaouachi_resume"
+                                class="btn btn-primary px-4 py-2" data-translate="downloadResume">
+                                Download Resume
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Skills Section-->
+        <section id="skills" class="info-section">
+
+            <h1 data-translate="skills">Skills</h1>
+            <div class="info-container">
+                <div class="info-box">
+                    <h3 data-translate="programmingLanguages">Programming Languages</h3>
+                    <ul>
+                        <li>Java</li>
+                        <li>C#</li>
+                        <li>HTML, CSS, BOOTSTRAP, JavaScript</li>
+                        <li>SQL (MySQL, Microsoft SQL)</li>
+                        <li>XML</li>
+                    </ul>
+                </div>
+                <div class="info-box">
+                    <h3 data-translate="toolsTechnologies">Tools & Technologies</h3>
+                    <ul>
+                        <li data-translate="toolsTechnologies1">Git (branching, merging, and collaboration)</li>
+                        <li data-translate="toolsTechnologies2">Microsoft Office Suite (Excel, Word, PowerPoint, Outlook)</li>
+                        <li data-translate="toolsTechnologies3">Data Analysis & Visualization (Financial risk assessment, data management)</li>
+                        <li data-translate="toolsTechnologies4">Artificial Intelligence Fundamentals</li>
+                        <li data-translate="toolsTechnologies5">Blockchain Essentials</li>
+
+                    </ul>
+                </div>
+                <div class="info-box">
+                    <h3 data-translate="projectManagement">Project & Communication Skills</h3>
+                    <ul>
+                        <li data-translate="projectManagement1">Strong documentation practices</li>
+                        <li data-translate="projectManagement2">Attention to detail in project management</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section-->
+        <section id="certifications" class="info-section">
+            <h1 data-translate="certifications">Certifications</h1>
+            <ul>
+
+                <li data-translate="certification1">Artificial Intelligence Fundamentals | SkillUp 2024 – IBM
+                    SkillsBuild | August 2024</li>
+                <li data-translate="certification2">Microsoft SQL – Udemy | February 2024</li>
+                <li data-translate="certification3">Blockchain Essentials V2 – IBM | December 2022</li>
+                <li data-translate="certification4">Financing Small and Medium Companies and Risk Management – USAID |
+                    April 2019</li>
+                <li data-translate="certification5">Advanced EXCEL – TFC FORMATION | October 2017</li>
+                <li data-translate="certification6">Reading and Analysis of Financial Statements – MW CONSULTING |
+                    September 2016</li>
+
+            </ul>
+        </section>
+
+        <!-- Experience Section-->
+        <section id="experience" class="info-section">
+            <h1 data-translate="experience">Experience</h1>
+            <div class="info-container">
+
+                <!-- Credit Analyst Section -->
+                <div class="info-box">
+                    <div class="exp-header">
+                        <h4 data-translate="creditAnalyst">Credit Analyst</h4>
+                        <p class="date" data-translate="dateCredit">June 2015 – April 2023</p>
+                    </div>
+                    <p data-translate="placeCredit">Bank of Tunisia and the Emirates</p>
+                    <p data-translate="placeTunis">Tunis, Tunisia</p>
+                    <button type="button" class="btn btn-primary px-2 py-2 me-2 toggle-tasks-btn"
+                        onclick="toggleTasks(this)" data-translate="showTasks">Show Tasks</button>
+                    <div class="tasks-container">
+                        <ul data-translate="tasks">
+                            <li data-translate="tasksCredit1">Analyzed and prepared periodic department activity reports
+                                to identify departmental performance improvements.</li>
+                            <li data-translate="tasksCredit2">Assisted in developing and testing an information system
+                                with the IT department, ensuring accurate data migration.</li>
+                            <li data-translate="tasksCredit3">Developed and implemented an Excel-based system that
+                                reduced credit application response times from 3-5 days to 1-2 days, significantly
+                                optimizing departmental efficiency.</li>
+                            <li data-translate="tasksCredit4">Evaluated and processed credit files, ensuring
+                                comprehensive financial assessments for the Decision Committee.</li>
+                            <li data-translate="tasksCredit5">Coordinated with teams to ensure timely delivery of
+                                approved financing documents.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Financial Assistant Section (MIB) -->
+                <div class="info-box">
+                    <div class="exp-header">
+                        <h4 data-translate="financialAssistant">Financial Assistant</h4>
+                        <p class="date" data-translate="dateFinancialAssistantMib">February 2015 – May 2015</p>
+                    </div>
+                    <p data-translate="placeFinancialAssistantMib">MIB (Slama Group subsidiary)</p>
+                    <p data-translate="placeTunis">Tunis, Tunisia</p>
+                    <button type="button" class="btn btn-primary px-2 py-2 me-2 toggle-tasks-btn"
+                        onclick="toggleTasks(this)" data-translate="showTasks">Show Tasks</button>
+                    <div class="tasks-container">
+                        <ul data-translate="tasksFinancialAssistantMib">
+                            <li data-translate="tasksFinancialAssistantMib1">Managed clearance of trade titles and
+                                import authorizations for foreign and local suppliers.</li>
+                            <li data-translate="tasksFinancialAssistantMib2">Prepared provisional financial statements
+                                and managed budgetary commitments.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Assistant of the Bank Key Account Manager Section -->
+                <div class="info-box">
+                    <div class="exp-header">
+                        <h4 data-translate="assistantBank">Assistant of the Bank Key Account Manager</h4>
+                        <p class="date" data-translate="dateAssistantBank">August 2014 – October 2014</p>
+                    </div>
+                    <p data-translate="placeAssistantBank">Attijari Leasing (Attijari Bank subsidiary)</p>
+                    <p data-translate="placeTunis">Tunis, Tunisia</p>
+                    <button type="button" class="btn btn-primary px-2 py-2 me-2 toggle-tasks-btn"
+                        onclick="toggleTasks(this)" data-translate="showTasks">Show Tasks</button>
+                    <div class="tasks-container">
+                        <ul data-translate="tasksAssistantBank">
+                            <li data-translate="tasksAssistantBank1">Supported the Key Account Manager in daily tasks,
+                                including analyzing leasing financing requests.</li>
+                            <li data-translate="tasksAssistantBank2">Coordinated document preparation and submission to
+                                internal committees, ensuring timely processing.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Financial Assistant Section (SAME) -->
+                <div class="info-box">
+                    <div class="exp-header">
+                        <h4 data-translate="financialAssistant">Financial Assistant</h4>
+                        <p class="date" data-translate="dateFinancialAssistantSame">June 2014 – August 2014</p>
+                    </div>
+                    <p data-translate="placeFinancialAssistantSame">SAME</p>
+                    <p data-translate="placeTunis">Tunis, Tunisia</p>
+                    <button type="button" class="btn btn-primary px-2 py-2 me-2 toggle-tasks-btn"
+                        onclick="toggleTasks(this)" data-translate="showTasks">Show Tasks</button>
+                    <div class="tasks-container">
+                        <ul data-translate="tasksFinancialAssistantSame">
+                            <li data-translate="tasksFinancialAssistantSame1">Prepared payments for foreign and local
+                                suppliers and negotiated preferential banking conditions.</li>
+                            <li data-translate="tasksFinancialAssistantSame2">Provided administrative support to the
+                                CFO, managing financial commitments and documentation.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Education Section-->
+        <section id="education" class="info-section">
+            <h1 data-translate="education">Education</h1>
+            <div class="info-container">
+                <div class="info-box">
+                    <div class="edu-header">
+                        <h4 data-translate="degree1">College Diploma in Computer Programming</h4>
+                        <p class="date" data-translate="dateDegree1">September 2023 – April 2026 (Expected)</p>
+                    </div>
+                    <p data-translate="schoolDegree1">Collège la Cité (Ottawa Campus)</p>
+                    <p data-translate="placeOttawa">Ottawa, Canada</p>
+                    <p>GPA: 4.193 / 4.3</p>
+                </div>
+                <div class="info-box">
+                    <div class="edu-header">
+                        <h4 data-translate="degree2">Master’s Degree in International Business Affairs</h4>
+                        <p class="date" data-translate="dateDegree2">September 2017 - June 2019</p>
+                    </div>
+                    <p data-translate="schoolDegree2">Faculty of Economic Science and Management of Tunis </p>
+                    <p data-translate="placeTunis">Tunis, Tunisia</p>
+
+                </div>
+                <div class="info-box">
+                    <div class="edu-header">
+                        <h4 data-translate="degree3">Bachelor’s Degree in Economics (Specialized in Currency, Finance,
+                            and Banking)</h4>
+                        <p class="date" data-translate="dateDegree3">September 2011 - June 2014</p>
+                    </div>
+                    <p data-translate="schoolDegree3">Faculty of Economic Science and Management of Tunis</p>
+                    <p data-translate="placeTunis">Tunis, Tunisia</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section-->
+        <section id="projects" class="info-section">
+            <h1 data-translate="projects">Projects</h1>
+            <div class="info-container">
+
+                <div class="info-box">
+                    <div class="project-header1">
+                        <h2 data-translate="project1Title">Personal Website</h2>
+                        <p data-translate="project1Description">Developed a multilingual personal website using HTML,
+                            CSS, JavaScript. </p>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <div class="project-header2">
+                        <h2 data-translate="project2Title">Excel with Me</h2>
+                        <div id="project-content">
+                            <div id="excel-with-me-image">
+                                <img src="media/excel_with_me_image.png" alt="Excel with Me">
+                            </div>
+                            <div id="project-text">
+
+                                <p data-translate="project2Description">Creating videos to share valuable tips and
+                                    tricks about Excel on LinkedIn. Here are the links to each episode:</p>
+                                <ul>
+                                    <li><a href="https://lnkd.in/ez85mYze" target="_blank">Episode 1 - Adjust Columns
+                                            using
+                                            VBA</a></li>
+                                    <li><a href="https://lnkd.in/eQb5EZ7X" target="_blank">Episode 2 - Deleting Multiple
+                                            Blank Rows</a></li>
+                                    <li><a href="https://lnkd.in/exGZzgTP" target="_blank">Episode 3 - Wrapping Up Data
+                                            with
+                                            WRAPROWS</a>
+                                    </li>
+                                    <li><a href="https://lnkd.in/egsXa2fh" target="_blank">Episode 4 - Combine Sheets
+                                            using
+                                            VSTACK</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <div class="project-header3">
+                        <h2 data-translate="project3Title">Wanderlust Log</h2>
+                        <div id="project-content">
+                            <div id="wanderlust_log">
+                                <img src="media/wanderlust_log.png" alt="Wanderlust Log">
+                            </div>
+                            <div id="project-text">
+                                <p data-translate="project3Description">Developed during my first year of college,
+                                    "Wanderlust Log" is an Android application designed to help travelers plan their adventures with
+                                    ease and efficiency.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+        </section>
+
+        <!-- Hobbies Section-->
+        <section id="hobbies" class="info-section">
+            <h1 data-translate="hobbies">Hobbies</h1>
+            <ul>
+                <li data-translate="hobby1">
+                    <h3>Traveling around the globe: </h3>
+                    <p>Whether it's exploring the vibrant streets of
+                        Istanbul or the picturesque landscapes of Tuscany, I have a passion for discovering new cultures
+                        and hidden gems around the world. Each journey not only broadens my perspective but also fuels my
+                        creativity and problem-solving skills.</p>
+                </li>
+
+                <li data-translate="hobby2">
+                    <h3>Travel Planning: </h3>
+                    <p>I take pride in meticulously planning trips for family and
+                        friends, tailoring each itinerary to their unique preferences. From finding the best local
+                        eateries
+                        to organizing adventure-packed days, I enjoy making every trip a memorable experience. My
+                        attention
+                        to detail and organizational skills translate seamlessly into my professional life, where I
+                        manage
+                        projects with the same precision and care. </p>
+                </li>
+
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>© 2024 Ghofrane Chaouachi</p>
+    </footer>
+    <!-- Script links-->
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
